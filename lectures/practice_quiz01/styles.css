@@ -1,0 +1,22 @@
+img{
+    width: 200px;
+}
+
+nav{
+   border-style: solid;
+    border: dotted 10px;
+}
+
+header, footer{
+    background-color: gray;
+}
+
+section{
+    width: 400px;
+    display: inline-block;
+    border-style: solid;
+}
+
+#section2{
+    background-color: hotpink;
+}
