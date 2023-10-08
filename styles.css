@@ -17,6 +17,7 @@ p, a, li {
     font-size: 1.1em;
 }
 
+
 h2 {
     text-decoration: underline;
     font-size: x-large;
@@ -52,6 +53,10 @@ main {
     column-gap: 20px;
     
 }
+
+a:visited {
+    color: #a4c2a5;
+  }
 
 #tutorials {
     text-align: center;
