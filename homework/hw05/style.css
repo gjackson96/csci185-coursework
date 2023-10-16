@@ -83,7 +83,12 @@ footer {
 /***************************/
 
 /* Your Code Here */
-
+#sidebar {
+    padding: 20px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -94,8 +99,28 @@ footer {
 /********************************/
 
 /* Your Code Here */
+#upgrade {
+    border: solid 1px white;
+    border-radius: 120px;
+    /* padding: 10px; */
+    /* padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px; */
+    padding: 10px 25px;
+    /* first value is top and bottom 2nd is left and right */
+    grid-column: 4/5;
+    
+}
+
+header {
+   
+}
 
 
+nav {
+
+}
 
 
 
@@ -105,7 +130,29 @@ footer {
 /*************************/
 
 /* Your Code Here */
+#featured-content{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  
 
+}
+
+#featured-content img {
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 50%;
+}
+
+.artist-card {
+    width: 190px;
+	height: 180px;
+	margin: 15px;
+	position: relative;
+	min-width: 190px;
+}
 
 
 
