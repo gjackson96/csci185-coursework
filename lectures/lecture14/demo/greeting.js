@@ -1,9 +1,7 @@
 function sayHello() {
     // your code here...
-    document.querySelector("#message").innerHTML ='Oh hey.';
-    document.querySelector('#message').style.color = "red";
-}
-
+    document.querySelector("#message").innerHTML = 'hello.'
+    
 function sayGoodbye() {
     // your code here...
     document.querySelector("#message").innerHTML ='Buh bye.';
