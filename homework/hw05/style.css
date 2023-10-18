@@ -102,66 +102,137 @@ footer {
 #upgrade {
     border: solid 1px white;
     border-radius: 120px;
-    /* padding: 10px; */
-    /* padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px; */
     padding: 10px 25px;
     /* first value is top and bottom 2nd is left and right */
-    grid-column: 4/5;
+    text-transform: uppercase;
     
 }
 
+#profile {
+    font-weight: bold;
+    background-color: #222;
+    text-transform: uppercase;
+    border-radius: 120px;
+    padding: 8px 30px;
+}
+
 header {
-   
+   display:flex;
+   justify-content: right;
+   align-items: center;
+   column-gap: 20px;
+   padding: 10px 20px;
 }
-
-
 nav {
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+nav>a {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: solid 4px transparent;
 
 }
 
-
-
+nav>a:hover, nav>a.selected {
+    border-bottom: solid 4px #1db954;
+}
 
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
 /* Your Code Here */
-#featured-content{
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  
+#featured-content {
+    margin-top: 30px;
+    display: grid;     
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
 
 }
 
-#featured-content img {
-    max-width: 25%;
-    max-height: 25%;
+.artist-card img {
+    width: 100%;
     border-radius: 50%;
+
 }
 
 .artist-card {
-    width: 190px;
-	height: 180px;
-	margin: 15px;
-	position: relative;
-	min-width: 190px;
+   background-color: #222;
+   padding: 15px;
+   padding-bottom: 80px;
+   border-radius: 5%;
 }
 
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
 
+.artist-card p {
+    margin: 0%;
+    color: #ccc;
+}
 
+.artist-card button {
+    display: none;
+}
 
 /*****************/
 /* Mobile Design */
 /*****************/
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 800px) {
+    
+    
+    #featured-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .artist-card {
+        max-width: 110px;
+        min-width: 110px;
+        max-height: 250px;
+    }
+
+    
+}
 
 
 
-@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 500px) {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #featured-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+
+    .artist-card {
+        min-width: 220px;
+        max-width: 220px;
+        max-height: none;
+    }
+
+    #upgrade {
+        display: none;
+    }
+
+    #sidebar {
+        display: none;
+    
+    }
+
+}
