@@ -205,7 +205,7 @@ h2 {
     color: #ccc;
 }
 
-button {
+.artist-card button {
     background-color: #1db954;
     border-radius: 50%;
     color: white;
