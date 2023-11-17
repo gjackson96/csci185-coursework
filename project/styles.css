@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffeccf;
+    margin: 0;
+    padding: 0;
+    background-color: #d2c4ae;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    background: url("images/aotheaderimage.jpeg") center/cover no-repeat; /* Set the new background image */
+    background-position: center 20%; /* Adjust the vertical position (e.g., 20%) */
+    color: #ffeccf;
+    /* color: #fff; */
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding: 50px 0; /* Add top and bottom padding as needed */
+}
+
+header {
+    /* ... (your existing styles) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Add this line */
+}
+
+nav {
+    position: absolute; /* Add these lines */
+    bottom: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+
+nav a {
+    text-decoration: none;
+    /* color: #fff; */
+    color: #ffeccf;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Add these lines for the hover effect */
+nav a:hover {
+    border-bottom: 2px solid #294023;
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
+}
+
+
+/* Style the active tab */
+nav a.active {
+    color: #ffcc00;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+main {
+    padding: 20px;
+    grid-column: 2;
+    text-align: center;
+    background-color: #6f553f;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #294023;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    text-align: center;
+}
+
+li img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Make images circular */
+    border: 2px solid #000;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+li img:hover {
+    box-shadow: 0 0 10px 5px rgba(10, 72, 7, 0.7); /* Add a glowing effect on hover */
+}
+
+/* Set a larger size for the circular images */
+li img {
+    width: 120px;
+    height: 120px;
+}
+
+footer {
+    background-color: #333;
+    /* color: #fff; */
+    color: #ffeccf;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    grid-column: 1 / span 3; /* Span across three columns */
+    grid-row: -1; /* Place in the last row */
+}
+
