@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attack on Titan Characters</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Attack on Titan Characters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2><a href="characters.html">Characters</a></h2>
+            <ul class="character-list">
+                <div class="lightbox" id="character-lightbox">
+                    <span class="close-button" onclick="closeLightbox()">&times;</span>
+                    <img src="" alt="Lightbox Image" id="lightbox-image">
+                </div>
+
+                <li class="character">
+                    <img src="images/erenyaegericon.jpeg" alt="Eren Yeager Icon" onclick="openLightbox('images/erenyaegericon.jpeg')">
+                    <p class="character-name">Eren Yeager</p>
+                    <p class="character-description">The main protagonist of Attack On Titan, presents himself as a passionate, impulsive, and daring young man filled with rage against Titans, human devouring beings. </p>
+                </li>
+                <li class="character">
+                    <img src="images/mikasaackermanicon.jpeg" alt="Mikasa Ackerman Icon" onclick="openLightbox('images/mikasaackermanicon.jpeg')">
+                    <p class="character-name">Mikasa Ackerman</p>
+                    <p class="character-description">One of the two deuteragonists of the series, along with Armin Arlert. After her parents were murdered by human traffickers, Mikasa was rescued by Eren Yeager and lived with him and his parents, Grisha and Carla, before the fall of Wall Maria. </p>
+                </li>
+                <li class="character">
+                    <img src="images/arminarleticon.jpeg" alt="Armin Arlert Icon" onclick="openLightbox('images/arminarleticon.jpeg')">
+                    <p class="character-name">Armin Arlert</p>
+                    <p class="character-description">He is a childhood friend of Eren Yeager and Mikasa Ackerman, and one of the two deuteragonists of the series. Although he appears to be among the physically weakest of the 104th Training Corps, his intelligence and strategic genius makes him an invaluable asset, especially when paired with Hange. </p>
+                </li>
+                <li class="character">
+                    <img src="images/annieleonharticon.jpeg" alt="Annie Leonhart Icon" onclick="openLightbox('images/annieleonharticon.jpeg')">
+                    <p class="character-name">Annie Leonhart</p>
+                    <p class="character-description">A skilled warrior with the ability to transform into a Titan.</p>
+                </li>
+                <li class="character">
+                    <img src="images/reinnericon.jpeg" alt="Reiner Braun Icon" onclick="openLightbox('images/reinnericon.jpeg')">
+                    <p class="character-name">Reiner Braun</p>
+                    <p class="character-description">A former member of the Scout Regiment with a hidden identity.</p>
+                </li>
+                <li class="character">
+                    <img src="images/bertolticon.jpeg" alt="Bertolt Hoover Icon" onclick="openLightbox('images/bertolticon.jpeg')">
+                    <p class="character-name">Bertolt Hoover</p>
+                    <p class="character-description">A member of the Warrior Unit with the power to transform into a Titan.</p>
+                </li>
+                <li class="character">
+                    <img src="images/conniespringericon.jpeg" alt="Connie Springer Icon" onclick="openLightbox('images/conniespringericon.jpeg')">
+                    <p class="character-name">Connie Springer</p>
+                    <p class="character-description">A former member of the 104th Training Corps and the Scout Regiment.</p>
+                </li>
+                <li class="character">
+                    <img src="images/jeanicon.jpeg" alt="Jean Icon" onclick="openLightbox('images/jeanicon.jpeg')">
+                    <p class="character-name">Jean</p>
+                    <p class="character-description">A former member of the 104th Training Corps and a skilled soldier.</p>
+                </li>
+                <li class="character">
+                    <img src="images/sashablouseicon.webp" alt="Sasha Braus Icon" onclick="openLightbox('images/sashablouseicon.webp')">
+                    <p class="character-name">Sasha Braus</p>
+                    <p class="character-description">Known for her exceptional marksmanship and love for food.</p>
+                </li>
+                <li class="character">
+                    <img src="images/historiareissicon.webp" alt="Historia Reiss Icon" style="height: 100px;" onclick="openLightbox('images/historiareissicon.webp')">
+                    <p class="character-name">Historia Reiss</p>
+                    <p class="character-description">The true heir to the throne with a kind and compassionate personality.</p>
+                </li>
+                <li class="character">
+                    <img src="images/leviackermanicon.png" alt="Levi Ackerman Icon" onclick="openLightbox('images/leviackermanicon.png')">
+                    <p class="character-name">Levi Ackerman</p>
+                    <p class="character-description">Captain of the Special Operations Squad and one of humanity's strongest soldiers.</p>
+                </li>
+                <li class="character">
+                    <img src="images/erwinsmithicon.jpeg" alt="Erwin Smith Icon" onclick="openLightbox('images/erwinsmithicon.jpeg')">
+                    <p class="character-name">Erwin Smith</p>
+                    <p class="character-description">The former Commander of the Scout Regiment, known for his leadership.</p>
+                </li>
+                <li class="character">
+                    <img src="images/hangeicon.jpeg" alt="Hange Zoe Icon" onclick="openLightbox('images/hangeicon.jpeg')">
+                    <p class="character-name">Hange Zoe</p>
+                    <p class="character-description">The former Squad Leader of the Scout Regiment, known for their curiosity about Titans.</p>
+                </li>
+                <li class="character">
+                    <img src="images/zekeyeagericon.jpeg" alt="Zeke Yeager Icon" onclick="openLightbox('images/zekeyeagericon.jpeg')">
+                    <p class="character-name">Zeke Yeager</p>
+                    <p class="character-description">Eren's half-brother and a key figure in the conflict between Marley and Eldia.</p>
+                </li>
+                <li class="character">
+                    <img src="images/ymirfoundericon.jpeg" alt="Ymir the Founder Icon" onclick="openLightbox('images/ymirfoundericon.jpeg')">
+                    <p class="character-name">Ymir the Founder</p>
+                    <p class="character-description">A mysterious figure with a significant impact on the story.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; 2023 Attack on Titan Fan Page</p>
+    </footer>
+
+</body>
+</html>
