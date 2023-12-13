@@ -1,4 +1,5 @@
 /* You're welcome to change any of this! */
+
 * {
     box-sizing: border-box;
 }
@@ -6,9 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
- body {
-    margin: 0px;
-    font-family: 'Oswald';
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
     background-color: #b0a3d4;
 }
 
@@ -17,192 +18,105 @@ p, a, li {
     font-size: 1.1em;
 }
 
-
 h2 {
     text-decoration: underline;
     font-size: x-large;
 }
 
 header {
-    font-family: 'Sacrement';
+    font-family: 'Sacramento', cursive;
     font-size: x-large;
-    text-align:center;
+    text-align: center;
     background-color: #2f243a;
     color: white;
     border: 1px solid black;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1;
-    
+    padding: 20px;
 }
-
 
 header img {
     width: 180px;
-    display:inline-block;
+    display: block;
     margin: 0 auto;
-    padding-top: 20px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto auto auto auto;
-    row-gap: 20px;
-    column-gap: 20px;
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 a:visited {
     color: #a4c2a5;
-  }
+}
+
+section {
+    text-align: center;
+    border: 5px solid #197278;
+    border-radius: 5px;
+    padding-left: 5px;
+}
 
 #tutorials {
-    text-align: center;
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 5px solid #197278;
-    border-radius: 5px;
-    padding-left: 5px;
-    
-}
-
-#tutorials img {
-    width: 150px;
-    display: inline-block;
-    margin: 0 auto;
-    
-}
-
-#homework {
-    text-align: center;
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 5px solid #197278;
-    border-radius: 5px;
-    padding-left: 5px;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
 }
 
 #class-exercises {
-    text-align: center;
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 5px solid #197278;
-    border-radius: 5px;
-    padding-left: 5px;
-}
-
-#class-exercises img {
-    width: 100px;
-    display: grid;
-}
-
-#inspiration {
-    text-align: center;
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 5px solid #197278;
-    border-radius: 5px;
-    padding-left: 5px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
 }
 
 #quizzesandexams {
-    text-align: center;
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 5px solid #197278;
-    border-radius: 5px;
-    padding-left: 5px;
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+#homework {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    height: 60vh;
+}
+
+#inspiration {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#projects {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1; /* Updated to be below inspiration */
 }
 
 footer {
     font-size: larger;
     text-align: center;
-    width: 100%;
     height: 100px;
-    overflow: hidden;
     line-height: 100px;
     background-color: #a4c2a5;
     border: 1px solid black;
     color: white;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
 }
 
 /* Mobile */
 @media (max-width: 500px) {
     main {
-        display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto auto;
-        row-gap: 20px;
-        column-gap: 20px;
-    }
-    
-    header {
-        grid-column:span 1;
-    }
-    
-    #tutorials {
-        grid-row-start: 3;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 1;
-    }
-    
-    #class-exercises {
-        grid-row-start: 2;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 1;
-    }
-    
-    #quizzesandexams {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 6;
-        grid-row-end: 6;
-    }
-    
-    #homework {
-        grid-row-start: 4;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        height: 60vh;
-    }
-    
-    #inspiration {
-        grid-row-start: 5;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 1;
     }
 
-    .footer {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 6;
-        grid-row-end: 6;
+    header,
+    section {
+        grid-column: 1 / span 1;
     }
 
+    #tutorials,
+    #class-exercises,
+    #quizzesandexams,
+    #homework,
+    #inspiration,
+    #projects,
+    footer {
+        grid-row: auto;
+    }
 }
